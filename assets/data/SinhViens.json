@@ -1,0 +1,10 @@
+[
+    {"maSV": 1, "tenSV": "Nguyen Van A"},
+    {
+        "human": {
+            "age": 18,
+            "name": "nam"
+        }
+    },
+    {"maSV": 2, "tenSV": "Nguyen Van B"}
+]
