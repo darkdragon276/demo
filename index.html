@@ -1,133 +1,23 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
-</head>
-
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <h1 class="text-center display-4">Quan ly nhan vien</h1>
-                <div class="form-group">
-                    <p>Ma nhan vien</p>
-                    <input type="text" class="form-control" id="maNhanVien">
-                    <p class="text-danger check"></p>
-                </div>
-                <div class="form-group">
-                    <p>Ten nhan vien</p>
-                    <input type="text" class="form-control" id="tenNhanVien">
-                    <p class="text-danger check"></p>
-                </div>
-                <div class="form-group">
-                    <p>Chuc Vu</p>
-                    <select id="chucVu" class="form-control">
-                        <option value="1">Nhan vien</option> 0
-                        <option value="2">Quan Ly</option> 1
-                        <option value="3">Giam doc</option> 2
-                    </select>
-                </div>
-                <div class="form-group">
-                    <p>Luong co ban</p>
-                    <input type="text" class="form-control" id="luongCoBan">
-                    <p class="text-danger check"></p>
-                </div>
-                <div class="form-group">
-                    <p>So gio lam</p>
-                    <input type="text" class="form-control" id="soGioLam">
-                    <p class="text-danger check"></p>
-                </div>
-                <div class="form-group">
-                    <button class="btn btn-success" id="btnXacNhan">Xac
-                        nhan</button>
-                    <button class="btn btn-success" id="btnCapNhat">Cap
-                        nhat</button>
-                </div>
-            </div>
-            <div class="col-6">
-                <h1 class="text-center display-4">Thong tin nhan vien</h1>
-                <p>Ma nhan vien: <span class="text-danger font-weigh-bold"
-                        id="txtMaNhanVien"></span></p>
-                <p>Ten nhan vien: <span class="text-danger font-weigh-bold"
-                        id="txtTenNhanVien"></span></p>
-                <p>Chuc vu: <span class="text-danger font-weigh-bold" id="txtChucVu"></span></p>
-                <p>Tong Luong: <span class="text-danger font-weigh-bold" id="txtTongLuong"></span>
-                </p>
-                <p>Xep loai: <span class="text-danger font-weigh-bold" id="txtXepLoai"></span></p>
-            </div>
-        </div>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Ma nhan vien</th>
-                    <th scope="col">Ten nhan vien</th>
-                    <th scope="col">Chuc vu</th>
-                    <th scope="col">He so chuc vu</th>
-                    <th scope="col">Luong co ban</th>
-                    <th scope="col">Tong Luong</th>
-                    <th scope="col">Gio lam/thang</th>
-                    <th scope="col">Xep Loai</th>
-                    <th></th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody id="tblNhanVien">
-                <!-- <tr>
-                    <td>Ma nhan </td>
-                    <td>Ten nhan vien</td>
-                    <td>Chuc vu</td>
-                    <td>He so chuc vu</td>
-                    <td>Luong co ban</td>
-                    <td>Tong Luong</td>
-                    <td>Gio lam/thang</td>
-                    <td>Xep Loai</td>
-                    <td>
-                        <button class="btn btn-danger btn-xoa">Xoa</button>
-                    </td>
-                </tr> -->
-            </tbody>
-        </table>
-    </div>
-
-    <div id="data">
-
-    </div>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script type="module" src="./es6.js"></script>
 
-    <!-- models -->
-    <script src="./models/validation.js"></script>
-    <script src="./models/nhanVien.js"></script>
-
-    <!-- services -->
-
-    <!-- controllers -->
-    <!-- <script src="./controllers/index.js"></script> -->
-
-    <!-- ajax -->
-    <script src="./controllers/ajax.js"></script>
-</body>
-
+  </body>
 </html>
