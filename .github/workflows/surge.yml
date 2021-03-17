@@ -16,7 +16,7 @@ jobs:
       - name: Deploy to darkdragon276.surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
-          domain: ${{ surge.SURGE_DOMAIN }}
+          domain: ${{ secrets.SURGE_DOMAIN }}
           project: '.'
-          login: ${{ surge.SURGE_EMAIL }}
-          token: ${{ surge.SURGE_TOKEN }}
+          login: ${{ secrets.SURGE_EMAIL }}
+          token: ${{ secrets.SURGE_TOKEN }}
